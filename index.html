@@ -248,16 +248,16 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-three-fourths">
         <h2 class="title is-2">Performance</h2>
-		<p>The system's performance is evaluated using 3000 target events (10hrs) mixed with background noises at levels ranging from 0dB to 20dB SNR, ensuring robust detection across various acoustic conditions.<br></p>
+		<p>The system's performance is evaluated using 3600 target events (10hrs) mixed with background noises at levels ranging from 0dB to 20dB SNR, ensuring robust detection across various acoustic conditions.<br></p>
         <p><br></p>
 		<div class="image-container">
           <figure>
-            <img id="gimm" src="Packages/AED/data/cm_glass.png"> 
-            <!-- <figcaption> <p>Acuracy = 93%, Precision = 1.0, Recall = 0.86</p>  FRR=7.4%, FAR=0.00%</p>   </figcaption> -->
+            <img id="gimm" src="Packages/AED/data/glass_cm_matrix_3600.png"> 
+            <figcaption> <p>Acuracy = 91%, Precision = 1.0, Recall = 0.82</p> </figcaption>
           </figure>
 		  <figure>
-		    <img id="AED" src="Packages/AED/data/cm_smoke.png"> 
-		    <!-- <figcaption> <p>Acuracy = 93%, Precision = 1.0, Recall = 0.86</p>  FRR=6.8%, FAR=0.00%</p>  </figcaption -->
+		    <img id="AED" src="Packages/AED/data/smoke_cm_matrix_3600.png"> 
+		    <figcaption> <p>Acuracy = 93%, Precision = 1.0, Recall = 0.86</p>  </figcaption>
 		  </figure>
       </div>
     </div>
@@ -271,8 +271,9 @@
 		<h1 class="text is-1 has-text-centered">
 			<p>
 			<font color="black">
-			   Glass Break:&nbsp; FRR = 7.4%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAR = 0.0%<br>
-			   Smoke Alarm:&nbsp; FRR = 6.8%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAR = 0.0%
+			   Glass Break:&nbsp; FRR = 9.0%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAR = 0.0%
+			   <br>
+			   Smoke Alarm:&nbsp; FRR = 6.5%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAR = 0.0%
 			</font> 
 			</p>
 		</h1>
@@ -288,7 +289,7 @@
 			<p>
 			<b>False Alarm Rate (FAR)</b> = # of wrongly reported events / # of events
 			</p>
-			<!--
+			<br>
 			<p>
 			<b>Precision:</b> is intuitively the ability of the classifier not to label as positive a sample that is negative.
 			</p>
@@ -296,7 +297,6 @@
 			<b>Recall:</b> is intuitively the ability of the classifier to find all the positive samples.
 			</p>
 			<p>
-			-->
   </div>
 </section>
 
